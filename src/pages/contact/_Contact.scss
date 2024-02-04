@@ -1,0 +1,179 @@
+.contact {
+  background-color: var(--main-color);
+
+  &__container {
+    height: 100vh;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      padding-top: 100px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  &__link {
+    color: white;
+    font-size: 30px;
+    font-family: monospace;
+  }
+
+  &__icon {
+    font-size: 55px;
+    color: white;
+  }
+}
+.contactContainer .con {
+  height: 100vh;
+  padding-top: 150px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.contactContainer .contactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 25px;
+}
+.contactContainer .contactSection .contactSocial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.contactContainer .contactSection .contactSocial svg {
+  font-size: 55px;
+  color: white;
+}
+.contactContainer .contactSection .contactSocial h3 {
+  color: white;
+  font-size: 30px;
+  font-family: monospace;
+}
+.contactContainer .contactSection .contactSocial a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-family: monospace;
+}
+.contactContainer .contactLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 150px;
+  width: 100%;
+  border-top: 2px solid white;
+  padding-top: 20px;
+}
+.contactContainer .contactLogo .design {
+  padding: 10px;
+  border-right: 2px solid white;
+  height: 52px;
+}
+.contactContainer .contactLogo .design h5 {
+  color: white;
+  font-size: 24px;
+  font-family: monospace;
+}
+.contactContainer .contactLogo .logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: nameLogo 5s infinite;
+}
+.contactContainer .contactLogo .logo .icon {
+  width: 100px;
+  position: absolute;
+  z-index: -1;
+}
+.contactContainer .contactLogo .logo h2 {
+  font-size: 40px;
+  color: white;
+  background-color: var(--main-color);
+  font-family: fantasy;
+}
+.contactContainer .contactLogo .logo :nth-child(2) {
+  padding: 0 10px;
+}
+/* ##################################################### */
+@keyframes nameLogo {
+  0% {
+    gap: 0px;
+  }
+  20% {
+    transform: rotate(0deg);
+    gap: 0px;
+  }
+  33% {
+    transform: rotate(-10deg);
+    gap: 0px;
+  }
+  36% {
+    transform: rotate(10deg);
+    gap: 0px;
+  }
+  39% {
+    transform: rotate(-10deg);
+    gap: 0px;
+  }
+  42% {
+    transform: rotate(10deg);
+    gap: 0px;
+  }
+  45% {
+    transform: rotate(0deg);
+    gap: 0px;
+  }
+  50% {
+    gap: 50px;
+  }
+  55% {
+    gap: 50px;
+  }
+  60% {
+    gap: 50px;
+  }
+  65% {
+    gap: 50px;
+  }
+  70% {
+    gap: 0px;
+  }
+  100% {
+    gap: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .contactContainer .con {
+    padding-top: 100px;
+  }
+  .contactContainer .contactSection .contactSocial svg {
+    font-size: 45px;
+  }
+  .contactContainer .contactSection .contactSocial a {
+    font-size: 25px;
+  }
+  .contactContainer .contactSection .contactSocial h3 {
+    font-size: 25px;
+  }
+  .contactContainer .contactLogo .logo h2 {
+    font-size: 40px;
+  }
+}

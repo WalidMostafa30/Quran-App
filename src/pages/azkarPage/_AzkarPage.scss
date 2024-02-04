@@ -1,0 +1,41 @@
+.azkarPage {
+  margin-bottom: 30px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__card {
+    background-color: var(--main-color);
+    box-shadow: var(--main-shadow);
+    color: white;
+    display: flex;
+    border-radius: var(--main-border-radius);
+    border: var(--main-border);
+    align-items: center;
+  }
+
+  &__number {
+    padding: 0 10px;
+  }
+
+  &__section {
+    width: 100%;
+    border: 3px solid;
+    border-radius: 8px;
+  }
+
+  &__content {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-size: 26px;
+    line-height: 2;
+  }
+
+  &__description {
+    padding: 5px 20px;
+  }
+}

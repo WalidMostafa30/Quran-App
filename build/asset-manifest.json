@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c279e637.css",
+    "main.js": "/static/js/main.1d4d3625.js",
+    "static/media/ISLAMIC.png": "/static/media/ISLAMIC.f2ef3935b8da77329585.png",
+    "static/media/bg1.jpg": "/static/media/bg1.1fcc760604bf2b495a5c.jpg",
+    "static/media/hadis.jpg": "/static/media/hadis.fe4bbf590c7cad88465a.jpg",
+    "static/media/Quran.jpg": "/static/media/Quran.1098f2380c7535f4d00b.jpg",
+    "static/media/clock.jpg": "/static/media/clock.f04eac928032dc218115.jpg",
+    "static/media/azkar.jpg": "/static/media/azkar.5d7e111a3bbe2c290955.jpg",
+    "static/media/adeya.jpg": "/static/media/adeya.22dc861339b3a8de1326.jpg",
+    "static/media/tasabeh.jpg": "/static/media/tasabeh.977f76373bbfa289fc89.jpg",
+    "index.html": "/index.html",
+    "main.c279e637.css.map": "/static/css/main.c279e637.css.map",
+    "main.1d4d3625.js.map": "/static/js/main.1d4d3625.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c279e637.css",
+    "static/js/main.1d4d3625.js"
+  ]
+}

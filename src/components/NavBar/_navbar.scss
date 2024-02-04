@@ -1,0 +1,141 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.5s all ease-in-out;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+
+    @media (max-width: 992px) {
+      height: 60px;
+    }
+  }
+
+  &__logo {
+    font-family: "thuluth-decorated";
+    cursor: pointer;
+    font-size: 55px;
+    color: white;
+
+    @media (max-width: 992px) {
+      font-size: 33px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    height: 100%;
+
+    &.open {
+      transform: translateY(0);
+    }
+
+    @media (max-width: 992px) {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      flex-direction: column;
+      align-items: center;
+      transform: translatex(-100%);
+      transition: 0.5s transform ease-in-out;
+      z-index: 111;
+      height: calc(100vh - 60px);
+      gap: 0px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.3s;
+    height: 100%;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+
+  // ################ start brg-icon ################
+  &__brg-icon {
+    width: 36px;
+    height: 21px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    display: none;
+
+    span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: white;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0px;
+        transform-origin: left center;
+      }
+
+      &:nth-child(2) {
+        top: 9px;
+        transform-origin: left center;
+      }
+
+      &:nth-child(3) {
+        top: 18px;
+        transform-origin: left center;
+      }
+    }
+
+    &.open {
+      span {
+        &:nth-child(1) {
+          transform: rotate(45deg);
+          top: -6px;
+          left: 5px;
+        }
+
+        &:nth-child(2) {
+          width: 0%;
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+          top: 20px;
+          left: 5px;
+        }
+      }
+    }
+
+    @media (max-width: 992px) {
+      display: block;
+    }
+  }
+}

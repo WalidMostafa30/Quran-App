@@ -1,0 +1,71 @@
+.salahTime {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  &__card {
+    width: 260px;
+    height: 260px;
+    border: 2px dashed var(--main-color);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    &::after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: var(--main-color);
+      animation: circle 5s linear infinite;
+
+      @media (max-width: 768px) {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 148px;
+      height: 148px;
+    }
+  }
+
+  &__card-time {
+    font-size: 30px;
+  }
+
+  &__card-name {
+    font-size: 30px;
+  }
+
+  @keyframes circle {
+    0% {
+      transform: rotate(0deg) translate(130px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(130px) rotate(-360deg);
+    }
+  }
+
+  @media (max-width: 768px) {
+    @keyframes circle {
+      0% {
+        transform: rotate(0deg) translate(74px) rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg) translate(74px) rotate(-360deg);
+      }
+    }
+  }
+}

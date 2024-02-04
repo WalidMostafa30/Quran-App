@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+:root {
+  --main-color: black;
+  --main-shadow: -3px 4px 3px 0px rgba(0, 0, 0, 0.78);
+  --main-hover-shadow: -6px 7px 6px 0px rgba(0, 0, 0, 0.78);
+  --main-border-radius: 10px;
+  --main-border: 3px solid var(--main-color);
+}
+body {
+  font-family: sans-serif;
+  background-color: #eee;
+  direction: rtl;
+  scroll-behavior: smooth;
+  transition: 0.3s;
+  background: url(../Images/ISLAMIC.png) center center/cover repeat;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+i {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}

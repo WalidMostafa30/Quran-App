@@ -1,0 +1,66 @@
+.Ahadith {
+  margin-bottom: 30px;
+
+  &__section {
+    background-color: var(--main-color);
+    min-height: 350px;
+    border: var(--main-border);
+    border-radius: var(--main-border-radius);
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--main-hover-shadow);
+  }
+
+  &__content {
+    background-color: white;
+    min-height: 350px;
+    border-radius: var(--main-border-radius);
+    color: #232323;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    line-height: 44px;
+    font-size: 30px;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  &__btn {
+    background-color: white;
+    color: var(--main-color);
+    font-size: 26px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--main-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 26px;
+      padding: 6px 12px;
+      gap: 6px;
+    }
+  }
+
+  &__num {
+    background-color: white;
+    color: var(--main-color);
+    font-size: 22px;
+    padding: 10px 20px;
+    border-radius: var(--main-border-radius);
+
+    @media (max-width: 768px) {
+      font-size: 22px;
+      padding: 6px 12px;
+    }
+  }
+}
